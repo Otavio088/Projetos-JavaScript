@@ -1,0 +1,1 @@
+Desenvolvi uma Lista de Tarefas estilo Retrô para organização do usuário e marcação de tarefas. Também adicionei um relogio de tempo real para melhor orientação. Utilizei as linguagens HTML, CSS e JAVASCRIPT.

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf0f1;
+}
+
+main {
+    padding: 45px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+section {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro {
+    text-align: center;
+}
+
+#sorteado {
+    background: #2980b9;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+#imgDado {
+    width: 220px;
+}
+
+#btnSortear {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px #000;
+    background: #2980b9;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+#btnSortear:hover {
+    transform: scale(1.05);
+}
+
+/* Animar o dado */
+@keyframes mover {
+    0% {
+        transform: translateY(0px); /* mover no eixo Y vertical */
+        transform: rotate(100deg); /* rotacionar 200 graus */
+        opacity: 0; /* opacidade 0 = 100% transparente */
+       }
+    50% {
+        transform:scale(60%); /* mudar tamanho para 60% */
+    }
+    100% {
+        transform: translateY(-15px); /* mover no eixo Y vertical */
+        transform: rotate(-100deg); /* rotacionar -200 graus */
+        opacity: 1; /* opacidade 1 = 0% transparente */
+    }
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 0; /* opacidade 0 = 100% transparente */
+    }
+    from {
+        opacity: 1; /* opacidade 1 = 0% transparente */
+    }
+}
+
+.animar {
+    animation: mover 0.5s infinite alternate;
+}
+
+.aparecer {
+    animation: aparecer 1.5s ease-in;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        padding: 50px 0px 50px 0px;
+    } 
+
+    h1 {
+        font-size: 15px;
+    }
+    footer {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste IMC</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <main>
+            
+            <h1>Teste de IMC</h1>
+            <form action="" method="POST" id='formulario'>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="input" autofocus required/>
+                </div>
+                <div class="form-group">
+                    <label for="idade">Idade</label>
+                    <input type="number" min="1" max="120" name="idade" id="idade" class="input" required/>
+                </div>
+                <div class="form-group">
+                    <label for="peso">Peso(kg)</label>
+                    <input type="number" step="0.01" min="1.0" max="500.0" name="peso" id="peso" class="input" required/>
+                </div>
+                <div class="form-group">
+                    <label for="altura">Altura(m)</label>
+                    <input type="number" step="0.01" min="0.5" max="3.0" name="altura" id="altura" class="input" required/>
+                </div>
+
+                <div class="botoes" class="form-group">
+                    <button type='submit' class='botao' id='btnEnviar'>Enviar</button>
+                    <button type='reset' class='botao' id='btnLimpar'>Limpar</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="imc">IMC</label>
+                    <input type="number" name="imc" id="resultadoImc" class="input" value='0.0' disabled/>
+
+                    <div class="aviso"> 
+                        <span id='aviso'></span>
+                    </div>
+                </div>
+            </form>
+
+            <div id='fixa'>
+                <h2 id='id' class='pessoa'>Fixa de IMC</h2>
+                <p id='nome' class='pessoa'></p>
+                <p id='idade' class='pessoa'></p>
+                <p id='peso' class='pessoa'></p>
+                <p id='altura' class='pessoa'></p>
+                <p id='imc' class='pessoa'></p>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; | Otávio Augusto de Melo Ribeiro</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

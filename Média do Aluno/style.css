@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ececec;
+}
+
+main {
+    padding: 25px;
+}
+
+h1 {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin: 20px;
+}
+
+.form-group {
+    margin: 10px
+}
+
+input[type=number], input[type=text] {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.botoes button {
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 40%;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#btnCalcular {
+    background: darkblue;
+}
+
+#btnLimpar {
+    background: darkred;
+}
+
+.cx, input[type=text] {
+    border: none;
+    border-radius: 5px;
+}
+
+.aprovado {
+    background: rgb(0, 209, 0);
+}
+.recuperacao {
+    background: yellow;
+}
+
+.reprovado {
+    background: red;
+}
+
+.alerta {
+    background: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
