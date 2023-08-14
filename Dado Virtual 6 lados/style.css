@@ -56,11 +56,6 @@ section {
     background: #2980b9;
     color: #fff;
     cursor: pointer;
-    transition: transform 200ms ease-in-out;
-}
-
-#btnSortear:hover {
-    transform: scale(1.05);
 }
 
 /* Animar o dado */
